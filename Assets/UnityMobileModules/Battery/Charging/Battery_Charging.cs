@@ -28,5 +28,16 @@ namespace UnityMobileModules
                 return SystemInfo.batteryStatus == BatteryStatus.Charging || SystemInfo.batteryStatus == BatteryStatus.NotCharging;
             }
         }
+
+        /// <summary>
+        /// Returns the battery status
+        /// </summary>
+        public static BatteryStatus batteryStatus
+        {
+            get
+            {
+                return SystemInfo.batteryStatus;
+            }
+        }
     }
 }

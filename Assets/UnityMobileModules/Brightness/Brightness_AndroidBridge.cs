@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace UnityMobileModules
 {
+#if UNITY_ANDROID
     /// <summary>
     /// Brightness based information
     /// </summary>
@@ -39,23 +41,27 @@ namespace UnityMobileModules
         {
             javaClass = new AndroidJavaClass(javaPackageName + "." + javaClassName);
         }
-        
+
         /// <summary>
         /// Gets and Sets the normalized brightness to native Android
         /// </summary>
-        private static float normalizedBrightness_Android
+        static float normalizedBrightness_Android
         {
             get
             {
-                var brightness = javaClass.CallStatic<float>(getNormalizedBrightness_MethodName);
-                brightness /= 255f; 
-                //Debug.Log("Returned Normalized Brightness : " + brightness);
-                return brightness;
+                var brightness = javaClass.CallStatic<int>(getNormalizedBrightness_MethodName);
+                float ret = brightness / 255f;
+                //Debug.Log("Returned Normalized Brightness : " + ret);
+                return ret;
             }
             set
             {
-                javaClass.CallStatic(setNormalizedBrightness_MethodName, value);
+                var unroundedBrightness = value * 255f;
+                var roundedBrightness = Mathf.RoundToInt(unroundedBrightness);
+                //Debug.Log("Set Brightness : " + roundedBrightness);
+                javaClass.CallStatic(setNormalizedBrightness_MethodName, roundedBrightness);
             }
         }
     }
+#endif
 }
