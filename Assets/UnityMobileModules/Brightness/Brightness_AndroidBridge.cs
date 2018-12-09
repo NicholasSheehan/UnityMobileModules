@@ -10,7 +10,7 @@ namespace UnityMobileModules
         /// <summary>
         /// Package Name
         /// </summary>
-        const string javaPackageName = "com.UnityMobileModule";
+        const string javaPackageName = "com.UnityMobileModules";
 
         /// <summary>
         /// Class Name
@@ -43,11 +43,14 @@ namespace UnityMobileModules
         /// <summary>
         /// Gets and Sets the normalized brightness to native Android
         /// </summary>
-        static float normalizedBrightness_Android
+        private static float normalizedBrightness_Android
         {
             get
             {
-                return javaClass.CallStatic<float>(getNormalizedBrightness_MethodName);
+                var brightness = javaClass.CallStatic<float>(getNormalizedBrightness_MethodName);
+                brightness /= 255f; 
+                //Debug.Log("Returned Normalized Brightness : " + brightness);
+                return brightness;
             }
             set
             {
