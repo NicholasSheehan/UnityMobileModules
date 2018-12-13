@@ -29,10 +29,9 @@ namespace UnityMobileModules
         /// </summary>
         static Alert()
         {
-#if UNITY_EDITOR
-            return;
-#endif
+#if !UNITY_EDITOR
             javaClass = new AndroidJavaClass(javaPackageName + "." + javaClassName);
+#endif
         }
 
         /// <summary>

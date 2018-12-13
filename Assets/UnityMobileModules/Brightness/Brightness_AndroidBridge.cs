@@ -39,10 +39,9 @@ namespace UnityMobileModules
         /// </summary>
         static Brightness()
         {
-#if UNITY_EDITOR
-            return;
-#endif
+#if !UNITY_EDITOR
             javaClass = new AndroidJavaClass(javaPackageName + "." + javaClassName);
+#endif
         }
 
         /// <summary>
