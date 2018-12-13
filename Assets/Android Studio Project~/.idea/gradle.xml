@@ -8,8 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Brightness" />
-            <option value="$PROJECT_DIR$/Toast" />
+            <option value="$PROJECT_DIR$/UnityMobileModules" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

@@ -1,1 +1,1 @@
-include ':app', ':Brightness', ':Toast'
+include ':app', ':UnityMobileModules'

@@ -31,7 +31,23 @@
 #if UNITY_EDITOR
             return;
 #elif UNITY_ANDROID
-            ShowToast_Android(toastText, toastLength);
+            ShowToast_Android(toastText, toastLength == ToastLength.Long);
+#elif UNITY_IOS
+
+#endif
+        }
+
+        /// <summary>
+        /// Shows a toast
+        /// </summary>
+        /// <param name="toastText">Text to show on the toast</param>
+        /// <param name="longToast">Should a long toast be shown</param>
+        public static void ShowToast(string toastText, bool longToast)
+        {
+#if UNITY_EDITOR
+            return;
+#elif UNITY_ANDROID
+            ShowToast_Android(toastText, longToast);
 #elif UNITY_IOS
 
 #endif

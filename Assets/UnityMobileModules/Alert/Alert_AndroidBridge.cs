@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace UnityMobileModules
 {
 #if UNITY_ANDROID
-    public static partial class Toast
+    public static partial class Alert
     {
         /// <summary>
         /// Package Name
@@ -14,13 +13,12 @@ namespace UnityMobileModules
         /// <summary>
         /// Class Name
         /// </summary>
-        const string javaClassName = "Toast";
+        const string javaClassName = "Alert";
 
         /// <summary>
-        /// Method Name to get brightness level
+        /// Method Name to show an Alert
         /// </summary>
-        const string ShowToast_MethodName = "ShowToast";
-
+        const string ShowAlert_MethodName = "ShowAlert";
         /// <summary>
         /// Java Class to interface with
         /// </summary>
@@ -29,7 +27,7 @@ namespace UnityMobileModules
         /// <summary>
         /// Static constructor, guaranteed to run when one of the properties are called
         /// </summary>
-        static Toast()
+        static Alert()
         {
 #if UNITY_EDITOR
             return;
@@ -38,13 +36,14 @@ namespace UnityMobileModules
         }
 
         /// <summary>
-        /// Shows a Toast
+        /// Shows an Alert
         /// </summary>
-        /// <param name="toastText">Text to toast</param>
-        /// <param name="longToast">Should a long toast be shown</param>
-        static void ShowToast_Android(string toastText, bool longToast)
+        /// <param name="alertTitle">Title of the alert</param>
+        /// <param name="alertBody">Text of the alert</param>
+        /// <param name="cancelButtonText">Text to display on the cancel button</param>
+        static void ShowAlert_Android(string alertTitle, string alertBody, string cancelButtonText)
         {
-            javaClass.CallStatic(ShowToast_MethodName, toastText, longToast);
+            javaClass.CallStatic(ShowAlert_MethodName, alertTitle, alertBody, cancelButtonText);
         }
     }
 #endif
