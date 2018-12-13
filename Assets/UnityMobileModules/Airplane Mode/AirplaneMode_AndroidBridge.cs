@@ -3,7 +3,7 @@
 namespace UnityMobileModules
 {
 #if UNITY_ANDROID
-    public static partial class Alert
+    public static partial class AirplaneMode
     {
         /// <summary>
         /// Package Name
@@ -13,12 +13,12 @@ namespace UnityMobileModules
         /// <summary>
         /// Class Name
         /// </summary>
-        const string javaClassName = "Alert";
+        const string javaClassName = "AirplaneMode";
 
         /// <summary>
-        /// Method Name to show an Alert
+        /// Method Name to find if Airplane Mode is on
         /// </summary>
-        const string ShowAlert_MethodName = "ShowAlert";
+        const string IsAirplaneModeOn_MethodName = "IsAirplaneModeOn";
 
         /// <summary>
         /// Java Class to interface with
@@ -28,7 +28,7 @@ namespace UnityMobileModules
         /// <summary>
         /// Static constructor, guaranteed to run when one of the properties are called
         /// </summary>
-        static Alert()
+        static AirplaneMode()
         {
 #if !UNITY_EDITOR
             javaClass = new AndroidJavaClass(javaPackageName + "." + javaClassName);
@@ -36,14 +36,14 @@ namespace UnityMobileModules
         }
 
         /// <summary>
-        /// Shows an Alert
+        /// Is Airplane Mode On
         /// </summary>
-        /// <param name="alertTitle">Title of the alert</param>
-        /// <param name="alertBody">Text of the alert</param>
-        /// <param name="cancelButtonText">Text to display on the cancel button</param>
-        static void ShowAlert_Android(string alertTitle, string alertBody, string cancelButtonText)
+        static bool IsAirplaneModeOn_MethodName_Android
         {
-            javaClass.CallStatic(ShowAlert_MethodName, alertTitle, alertBody, cancelButtonText);
+            get
+            {
+                return javaClass.CallStatic<bool>(IsAirplaneModeOn_MethodName);
+            }
         }
     }
 #endif

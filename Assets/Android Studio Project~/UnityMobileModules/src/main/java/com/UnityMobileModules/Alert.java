@@ -12,8 +12,7 @@ public class Alert
      * @param alertBody - Text of the alert
      * @param cancelButtonText - Text to display on the cancel button
      */
-    public static void ShowAlert(String alertTitle, String alertBody, String cancelButtonText)
-    {
+    public static void ShowAlert(String alertTitle, String alertBody, String cancelButtonText)     {
         AlertDialog.Builder builder = new AlertDialog.Builder(UnityPlayer.currentActivity);
         builder.setTitle(alertTitle)
                 .setMessage(alertBody)

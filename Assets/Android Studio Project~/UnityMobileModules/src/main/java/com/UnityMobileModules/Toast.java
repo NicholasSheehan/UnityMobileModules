@@ -8,8 +8,7 @@ public class Toast {
      * @param toastText - Text to display on the toast
      * @param showLongToast - Should a long toast be shown?
      */
-    public static void ShowToast(String toastText, boolean showLongToast)
-    {
+    public static void ShowToast(String toastText, boolean showLongToast) {
         android.widget.Toast.makeText(UnityPlayer.currentActivity, toastText, showLongToast ? android.widget.Toast.LENGTH_LONG : android.widget.Toast.LENGTH_SHORT).show();
     }
 }
