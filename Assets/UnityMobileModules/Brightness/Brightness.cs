@@ -15,7 +15,7 @@ namespace UnityMobileModules
             get
             {
 #if UNITY_EDITOR
-                Debug.LogWarning("Getting value normalizedBrightness, returning value of -1");
+                //Debug.LogWarning("Getting value normalizedBrightness, returning value of -1");
                 return -1;
 #elif UNITY_ANDROID
                 return normalizedBrightness_Android;
@@ -43,7 +43,7 @@ namespace UnityMobileModules
             get
             {
 #if UNITY_EDITOR
-                Debug.LogWarning("Called brightness, returning value of -1");
+                //Debug.LogWarning("Called brightness, returning value of -1");
                 return -1;
 #else
                 return normalizedBrightness * 100f;
