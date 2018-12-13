@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using UnityMobileModules;
 
-namespace UnityMobileModuleDemo.Demo
+namespace UnityMobileModule.Demo
 {
     public class DisplayToast : MonoBehaviour
     {
