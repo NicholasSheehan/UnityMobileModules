@@ -38,7 +38,7 @@ namespace UnityMobileModules
         /// <summary>
         /// Is Airplane Mode On
         /// </summary>
-        static bool IsAirplaneModeOn_MethodName_Android
+        static bool IsAirplaneModeOn_Android
         {
             get
             {

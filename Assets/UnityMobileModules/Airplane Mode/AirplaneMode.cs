@@ -12,7 +12,7 @@
 #if UNITY_EDITOR
                 return false;
 #elif UNITY_ANDROID
-                return IsAirplaneModeOn_MethodName_Android;
+                return IsAirplaneModeOn_Android;
 #elif UNITY_IOS
 
 #endif
