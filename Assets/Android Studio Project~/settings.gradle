@@ -1,1 +1,1 @@
-include ':app', ':Brightness'
+include ':app', ':Brightness', ':Toast'
