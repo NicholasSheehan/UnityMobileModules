@@ -16,7 +16,7 @@ namespace UnityMobileModules.Demo
             displayText = GetComponent<Text>();
         }
 
-        void Update()
+        void OnEnable()
         {
             UpdateText();
         }
