@@ -19,10 +19,25 @@
       android:label="@string/app_name">
     <activity android:name="com.unity3d.player.UnityPlayerActivity"
               android:label="@string/app_name">
+
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
+
+      <!--==================== Deep Linking ====================-->
+      <!--"scheme://host/path?query"-->
+      <!--To test-->
+      <!--adb shell am start -W -a android.intent.action.VIEW -d "unitymobilemodules://testHost/deeplinkingPath?query=value" com.UnityMobileModules.Demo-->
+
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="unitymobilemodules" />
+      </intent-filter>
+
+
       <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
     </activity>
   </application>
