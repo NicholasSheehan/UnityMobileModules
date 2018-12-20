@@ -23,16 +23,16 @@ namespace UnityMobileModules
 
 #endif
             }
-            set
-            {
-#if UNITY_EDITOR
-                return;
-#elif UNITY_ANDROID
-                normalizedBrightness_Android = value;
-#elif UNITY_IOS
+//            set
+//            {
+//#if UNITY_EDITOR
+//                return;
+//#elif UNITY_ANDROID
+//                normalizedBrightness_Android = value;
+//#elif UNITY_IOS
 
-#endif
-            }
+//#endif
+//            }
         }
 
         /// <summary>
@@ -49,14 +49,14 @@ namespace UnityMobileModules
                 return normalizedBrightness * 100f;
 #endif
             }
-            set
-            {
-#if UNITY_EDITOR
-                return;
-#else
-                normalizedBrightness = value * 0.01f;
-#endif
-            }
+//            set
+//            {
+//#if UNITY_EDITOR
+//                return;
+//#else
+//                normalizedBrightness = value * 0.01f;
+//#endif
+//            }
         }
     }
 }

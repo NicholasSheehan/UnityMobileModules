@@ -22,7 +22,7 @@ namespace UnityMobileModules.Demo
         /// </summary>
         public void OnSliderValueChanged()
         {
-            Brightness.normalizedBrightness = brightnessSlider.value;
+            //Brightness.normalizedBrightness = brightnessSlider.value;
         }
     }
 }
