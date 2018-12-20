@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace UnityMobileModules
+namespace UnityMobileModules.Demo
 {
     [RequireComponent(typeof(Text))]
     public class DisplayIfConnectedToInternet : MonoBehaviour
