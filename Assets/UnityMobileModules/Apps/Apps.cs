@@ -10,7 +10,7 @@
             get
             {
 #if UNITY_EDITOR
-                return null;
+                return new string[0];
 #elif UNITY_ANDROID
                 return installedAppDisplayNames_Android;
 #elif UNITY_IOS
@@ -27,7 +27,7 @@
             get
             {
 #if UNITY_EDITOR
-                return null;
+                return new string[0];
 #elif UNITY_ANDROID
                 return installedAppPackageNames_Android;
 #elif UNITY_IOS
