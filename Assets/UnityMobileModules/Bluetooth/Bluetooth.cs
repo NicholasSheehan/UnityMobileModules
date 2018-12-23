@@ -1,5 +1,8 @@
 ﻿namespace UnityMobileModules
 {
+	/// <summary>
+	/// Bluetooth information
+	/// </summary>
     public static partial class Bluetooth
     {
         /// <summary>
@@ -20,7 +23,7 @@
         }
 
         /// <summary>
-        /// 
+        /// Is bluetooth enabled
         /// </summary>
         public static bool isEnabled
         {

@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
-using JetBrains.Annotations;
 using UnityEngine;
 
 namespace UnityMobileModules
 {
+	/// <summary>
+	/// Deep Linking information
+	/// </summary>
     public static partial class DeepLinking
     {
         /// <summary>

@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace UnityMobileModules
 {
+	/// <summary>
+	/// Returns the internet state
+	/// </summary>
     public static partial class Internet
     {
         /// <summary>

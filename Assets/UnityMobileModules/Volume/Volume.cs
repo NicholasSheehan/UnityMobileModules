@@ -1,5 +1,8 @@
 ﻿namespace UnityMobileModules
 {
+	/// <summary>
+	/// Gets the volume status of the device
+	/// </summary>
     public static partial class Volume
     {
         /// <summary>

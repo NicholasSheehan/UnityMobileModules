@@ -1,5 +1,8 @@
 ﻿namespace UnityMobileModules
 {
+	/// <summary>
+	/// Checks to see if the device is rooted / jailbroken
+	/// </summary>
     public static partial class Rooted
     {
         /// <summary>

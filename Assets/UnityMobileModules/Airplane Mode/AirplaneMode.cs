@@ -1,5 +1,8 @@
 ﻿namespace UnityMobileModules
 {
+	/// <summary>
+    /// Airplane Mode information
+    /// </summary>
     public static partial class AirplaneMode
     {
         /// <summary>

@@ -1,5 +1,8 @@
 ﻿namespace UnityMobileModules
 {
+	/// <summary>
+    /// Gets information about the apps installed on the device
+    /// </summary>
     public static partial class Apps
     {
         /// <summary>

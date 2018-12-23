@@ -4,10 +4,13 @@ using UnityEngine;
 
 namespace UnityMobileModules
 {
+	/// <summary>
+	/// Software based keyboard informtation
+	/// </summary>
     public static class Keyboard
     {
         /// <summary>
-        /// Is the keyboard supported
+        /// Is the software keyboard supported
         /// </summary>
         public static bool isSupported
         {
@@ -18,7 +21,7 @@ namespace UnityMobileModules
         }
 
         /// <summary>
-        /// Is the keyboard visible
+        /// Is the software keyboard visible
         /// </summary>
         public static bool isVisible
         {
@@ -29,7 +32,7 @@ namespace UnityMobileModules
         }
 
         /// <summary>
-        /// Opens a keyboard
+        /// Opens a software keyboard on the screen
         /// </summary>
         /// <param name="text">	Text to edit.</param>
         /// <param name="keyboardType">Type of keyboard (eg, any text, numbers only, etc).</param>

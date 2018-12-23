@@ -1,6 +1,8 @@
-﻿
-namespace UnityMobileModules
+﻿namespace UnityMobileModules
 {
+	/// <summary>
+    /// Shows an Alert
+    /// </summary>
     public static partial class Alert
     {
         /// <summary>

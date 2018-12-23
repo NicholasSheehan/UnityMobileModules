@@ -4,9 +4,6 @@ using UnityEngine;
 namespace UnityMobileModules
 {
 #if UNITY_ANDROID
-    /// <summary>
-    /// Brightness based information
-    /// </summary>
     public static partial class Brightness
     {
         /// <summary>
