@@ -4,26 +4,26 @@ using UnityEngine.UI;
 namespace UnityMobileModules.Demo
 {
     [RequireComponent(typeof(Text))]
-    public class DisplayDeepLinkingURI : MonoBehaviour
+    public class DisplayIsKeyboardVisible : MonoBehaviour
     {
         /// <summary>
-        /// Text that displays the Deep Link URI
+        /// Text that displays the status
         /// </summary>
-        Text displayText;
+        Text statusText;
 
         void Awake()
         {
-            displayText = GetComponent<Text>();
+            statusText = GetComponent<Text>();
         }
 
-        void Start()
+        void Update()
         {
             UpdateText();
         }
 
         void UpdateText()
         {
-            displayText.text = DeepLinking.uri;
+            statusText.text = Keyboard.isVisible.ToString();
         }
     }
 }

@@ -5,17 +5,17 @@ Software keyboard state of the device
 ##### `Keyboard.isSupported`
 `public static bool isSupported;`
 
-[Example Script]()
+[Example Script](../../../Assets/UnityMobileModuleDemo/Keyboard/DisplayIsKeyboardSupported.cs)
 
 ##### `Keyboard.isVisible`
 `public static bool isVisible;`
 
-[Example Script]()
+[Example Script](../../../Assets/UnityMobileModuleDemo/Keyboard/DisplayIsKeyboardVisible.cs)
 
 ##### `Keyboard.Open(string, TouchScreenKeyboardType, bool, bool, bool, bool, string)`
 `public static TouchScreenKeyboard Open(string text, TouchScreenKeyboardType keyboardType = TouchScreenKeyboardType.Default, bool autocorrection = true, bool multiline = false, bool secure = false, bool alert = false, string textPlaceholder = "/"/"");`
 
-[Example Script]()
+[Example Script](../../../Assets/UnityMobileModuleDemo/Keyboard/OpenKeyboard.cs)
 
 ## Refrences
 [Unity Docs](https://docs.unity3d.com/2017.1/Documentation/ScriptReference/TouchScreenKeyboard.html)
