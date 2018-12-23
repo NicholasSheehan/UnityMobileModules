@@ -7,7 +7,7 @@ Detects whether the contents of the build has been altered since it was built.
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/App%20Validity/DisplayAppValidityState.cs)
 
-## Refrences
+## References
 [Unity Docs](https://docs.unity3d.com/2017.1/Documentation/ScriptReference/Application-genuineCheckAvailable.html)
 
 ## Notes

@@ -17,7 +17,7 @@ Software keyboard state of the device
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Keyboard/OpenKeyboard.cs)
 
-## Refrences
+## References
 [Unity Docs](https://docs.unity3d.com/2017.1/Documentation/ScriptReference/TouchScreenKeyboard.html)
 
 ## Notes

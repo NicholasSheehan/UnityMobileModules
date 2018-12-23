@@ -7,7 +7,7 @@ Checks to see if the device is rooted or jailbroken
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Rooted/DisplayIfRooted.cs)
 
-## Refrences
+## References
 [Android](https://stackoverflow.com/a/23952951)
 
 ## Notes

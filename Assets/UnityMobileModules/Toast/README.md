@@ -7,7 +7,7 @@ Displays a toast on screen.
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Toast/DisplayToast.cs)
 
-## Refrences
+## References
 [Android](https://stackoverflow.com/a/3504538)
 
 ## Notes

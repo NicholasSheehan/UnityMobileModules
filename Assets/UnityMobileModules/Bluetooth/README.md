@@ -12,7 +12,7 @@ Returns all bluetooth related information
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Bluetooth/DisplayBluetoothEnabled.cs)
 
-## Refrences
+## References
 [Android](https://stackoverflow.com/a/29140091)
 
 ## Notes

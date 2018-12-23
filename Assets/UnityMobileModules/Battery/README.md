@@ -23,7 +23,7 @@ Returns all battery related information
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Battery/DisplayBatteryPercentage.cs)
 
-## Refrences
+## References
 [Battery Level - Unity Docs](https://docs.unity3d.com/2017.1/Documentation/ScriptReference/SystemInfo-batteryLevel.html)
 
 [Battery Status - Unity Docs](https://docs.unity3d.com/2017.1/Documentation/ScriptReference/SystemInfo-batteryStatus.html)

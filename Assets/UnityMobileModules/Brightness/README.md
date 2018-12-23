@@ -12,7 +12,7 @@ Gets the brightness of the device
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Brightness/DisplayNormalizedBrightnessLevel.cs)
 
-## Refrences
+## References
 [Android](https://stackoverflow.com/a/42875221)
 
 ## Notes

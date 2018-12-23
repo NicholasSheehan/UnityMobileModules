@@ -22,7 +22,7 @@ Internet state of the device
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Internet/DisplayIfConnectedToInternet.cs)
 
-## Refrences
+## References
 [Unity Docs](https://docs.unity3d.com/2017.1/Documentation/ScriptReference/Application-internetReachability.html)
 
 ## Notes

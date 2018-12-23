@@ -7,7 +7,7 @@ Displays an alert on screen.
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Alert/DisplayAlert.cs)
 
-## Refrences
+## References
 [Android](https://developer.android.com/reference/android/app/AlertDialog)
 
 ## Notes

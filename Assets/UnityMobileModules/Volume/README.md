@@ -41,7 +41,7 @@ Gets the volume of the device
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Volume/DisplayNormalizedAlarmVolume.cs)
 
-## Refrences
+## References
 [Android - Current Volume](https://developer.android.com/reference/android/media/AudioManager.html#getStreamMinVolume(int))
 
 [Android - Max Volume](https://developer.android.com/reference/android/media/AudioManager.html#getStreamMaxVolume(int))

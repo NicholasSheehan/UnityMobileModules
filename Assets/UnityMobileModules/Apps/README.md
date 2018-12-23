@@ -14,7 +14,7 @@ Returns all installed apps by:
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Apps/DisplayAllInstalledAppPackageNames.cs)
 
-### Refrences
+### References
 [Android](https://developer.android.com/reference/android/content/pm/PackageManager.html#getInstalledPackages(int))
 
 ## Notes

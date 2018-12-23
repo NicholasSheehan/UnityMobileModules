@@ -27,7 +27,7 @@ Gets the URI used to open the app via Deep Linking
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Deep%20Linking/DisplayDeepLinkingQuery.cs)
 
-## Refrences
+## References
 [Android](https://developer.android.com/training/app-links/deep-linking)
 
 ## Notes

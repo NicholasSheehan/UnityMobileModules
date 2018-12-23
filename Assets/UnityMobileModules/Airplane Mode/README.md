@@ -7,7 +7,7 @@ Detects whether the device is in Airplane Mode or not.
 
 [Example Script](../../../Assets/UnityMobileModuleDemo/Airplane%20Mode/DisplayAirplaneModeState.cs)
 
-## Refrences
+## References
 [Android](https://stackoverflow.com/a/17049778)
 
 ## Notes
