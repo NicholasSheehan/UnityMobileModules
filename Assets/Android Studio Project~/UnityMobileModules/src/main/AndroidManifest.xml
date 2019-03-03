@@ -4,4 +4,7 @@
     <!--Used by bluetooth-->
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
+    <!--Used by vibration-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
 </manifest>
