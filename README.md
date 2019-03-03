@@ -22,3 +22,4 @@ Unity Module Mobules brings extended mobile native functionality to your Unity G
 | [Rooted](Assets/UnityMobileModules/Rooted/README.md)                 | ✔ | ? | NI | NI |
 | [Toast](Assets/UnityMobileModules/Toast/README.md)                   | ✔ | ✔ | NI | NI |
 | [Volume](Assets/UnityMobileModules/Volume/README.md)                 | ✔ | ✔ | NI | NI |
+| [Vibration](Assets/UnityMobileModules/Vibration/README.md)           | ✔ | ✔ | NI | NI |
