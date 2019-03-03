@@ -9,6 +9,7 @@ Vibrates the device
 
 ## References
 [iOS](https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/feedback)
+
 [Android](https://developer.android.com/reference/android/os/Vibrator)
 
 ## Notes
