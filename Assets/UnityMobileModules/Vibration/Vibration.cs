@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace UnityMobileModules
+﻿namespace UnityMobileModules
 {
     /// <summary>
     /// Vibrates the device, based on iOS haptics
@@ -19,6 +17,7 @@ namespace UnityMobileModules
 #if UNITY_ANDROID
                 Vibrate_Android(LIGHT_DURATION, LIGHT_AMPLITUDE);
 #elif UNITY_IOS
+                iOS_Selection();
 #endif
             }
             else if (vibrationType == VibrationType.SuccessNotification)
@@ -26,6 +25,7 @@ namespace UnityMobileModules
 #if UNITY_ANDROID
                 VibratePattern_Android(SUCCESS_PATTERN, SUCCESS_AMPLITUDE);
 #elif UNITY_IOS
+                iOS_Success();
 #endif
             }
             else if (vibrationType == VibrationType.WarningNotification)
@@ -33,6 +33,7 @@ namespace UnityMobileModules
 #if UNITY_ANDROID
                 VibratePattern_Android(WARNING_PATTERN, WARNING_AMPLITUDE);
 #elif UNITY_IOS
+                iOS_Warning();
 #endif
             }
             else if (vibrationType == VibrationType.FailureNotification)
@@ -40,6 +41,7 @@ namespace UnityMobileModules
 #if UNITY_ANDROID
                 VibratePattern_Android(FAILURE_PATTERN, FAILURE_AMPLITUDE);
 #elif UNITY_IOS
+                iOS_Failure();
 #endif
             }
             else if (vibrationType == VibrationType.LightImpact)
@@ -47,6 +49,7 @@ namespace UnityMobileModules
 #if UNITY_ANDROID
                 Vibrate_Android(LIGHT_DURATION, LIGHT_AMPLITUDE);
 #elif UNITY_IOS
+                iOS_LightImpact();
 #endif
             }
             else if (vibrationType == VibrationType.MediumImpact)
@@ -54,6 +57,7 @@ namespace UnityMobileModules
 #if UNITY_ANDROID
                 Vibrate_Android(MEDIUM_DURATION, MEDIUM_AMPLITUDE);
 #elif UNITY_IOS
+                iOS_MediumImpact();
 #endif
             }
             else if (vibrationType == VibrationType.HeavyImpact)
@@ -61,6 +65,7 @@ namespace UnityMobileModules
 #if UNITY_ANDROID
                 Vibrate_Android(HEAVY_DURATION, HEAVY_AMPLITUDE);
 #elif UNITY_IOS
+                iOS_HeavyImpact();
 #endif
             }
         }
