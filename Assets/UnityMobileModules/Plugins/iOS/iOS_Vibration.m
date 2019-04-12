@@ -16,21 +16,21 @@ void iOS_Selection()
 
 void iOS_Success()
 {
-	if(NotificationFeedbackGenerator == nil)	NotificationFeedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];		
+	if(NotificationFeedbackGenerator == nil) NotificationFeedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];		
     [NotificationFeedbackGenerator prepare];
     [NotificationFeedbackGenerator notificationOccurred:UINotificationFeedbackTypeSuccess];
 }
 
 void iOS_Warning()
 {
-    if(NotificationFeedbackGenerator == nil)	NotificationFeedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];		
+    if(NotificationFeedbackGenerator == nil) NotificationFeedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];		
     [NotificationFeedbackGenerator prepare];
     [NotificationFeedbackGenerator notificationOccurred:UINotificationFeedbackTypeWarning];
 }
 
 void iOS_Failure()
 {
-	if(NotificationFeedbackGenerator == nil)	NotificationFeedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];		
+	if(NotificationFeedbackGenerator == nil) NotificationFeedbackGenerator = [[UINotificationFeedbackGenerator alloc] init];		
     [NotificationFeedbackGenerator prepare];
     [NotificationFeedbackGenerator notificationOccurred:UINotificationFeedbackTypeError];
 }
